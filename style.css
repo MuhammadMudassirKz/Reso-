@@ -3,11 +3,15 @@ body{
     padding: 0;
 }
 
+@font-face {
+    font-family: "Geometria";
+    src: url("Fonts/Geometria-Font/Geometria.ttf");
+}
+
 .main-con{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background-color: #f4f7fa;
     display: flex;
     flex-direction: column;
 }
@@ -46,14 +50,16 @@ body{
 
 .dropdown .dropbtn {
     font-size: 16px;
+    font-family: "Geometria", serif;
+    color: rgb(24, 25, 26);
     border: none;
     border-radius: 40px;
     outline: none;
     padding: 6px 16px;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
 }
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ffde00;
@@ -89,8 +95,12 @@ body{
 }
 
 .blog ul{
+    font-size: 16px;
+    font-family: "Geometria", serif;
+    color: rgb(24, 25, 26);
     list-style: none;
     display: contents;
+    cursor: default;
 }
 
 .blog ul li:hover{
@@ -124,26 +134,33 @@ body{
 .sign-in ul{
     list-style: none;
     display: contents;
+    font-size: 16px;
+    font-family: "Geometria", serif;
+    color: rgb(24, 25, 26);
+    cursor: default;
 }
 
 .sign-in ul li:hover{
     color: #ffde00;
 }
 
-.patner-with-us{
+.partner-with-us{
     padding-right: 130px;
 }
 
-.patner-with-us-btn{
+.partner-with-us-btn{
     font-size: 16px;
+    font-family: "Geometria", serif;
+    color: rgb(24, 25, 26);
     border: none;
     border-radius: 40px;
     outline: none;
     padding: 6px 16px;
     background-color: #ffde00;
-    font-family: inherit;
     display: flex;
+    cursor: default;
 }
+
 
 .header-bg-img{
     width: 100%;
@@ -152,17 +169,20 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .header-img-text{
-    padding-bottom: 95px;
+    margin-top: 570px;
+    padding-left: 45px;
 }
 
 .header-img-text h1{
-    font-size: 70px;
-    color: white;
+    font-size: 60px;
+    font-family: "Geometria", serif;
+    color: rgb(255, 255, 255);
 }
 
 .search-container{
@@ -175,6 +195,9 @@ body{
 }
 
 .search-container input[type=text]{
+    font-size: 16px;
+    font-family: "Geometria", serif;
+    color: rgb(120, 122, 128);
     width: 430px;
     padding: 12px 12px 12px 50px;
     border: none;
@@ -183,14 +206,18 @@ body{
 }
 
 .search-container button {
+    font-size: 16px;
+    font-family: "Geometria", serif;
+    color: rgb(24, 25, 26);
     width: 160px;
     padding: 12px;
     background: #ffde00;
     border: none;
-    cursor: pointer;
+    cursor: default;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 
 .second-section{
     width: 100%;
@@ -198,15 +225,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*padding-left: 185px;*/
-    /*position: absolute;*/
-    /*margin-top: 710px;*/
+    margin-top: 155px;
 }
 
 .second-section h1{
-    padding-right: 780px;
-    /*color: white;*/
+    font-size: 33px;
+    font-weight: 100;
+    font-family: "SFUIDisplay", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-right: 800px;
 }
+
 
 .cards{
     display: flex;
@@ -254,8 +284,10 @@ body{
 }
 
 .card-header-image-text{
-    color: white;
+    font-size: 15px;
+    font-family: "Geometria", serif;
     font-weight: 600;
+    color: rgb(255, 255, 255);
     width: 250px;
     padding-left: 20px;
 }
@@ -276,8 +308,13 @@ body{
 }
 
 .palm-beach-resort p{
+    font-size: 14px;
+    font-family: "SFUIDisplay", sans-serif;
+    color: rgb(24, 25, 26);
+    font-weight: bold;
     padding-left: 8px;
 }
+
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -289,7 +326,10 @@ body{
 
 .miami p {
     height: 0px;
+    font-size: 14px;
+    font-family: "Myriad Pro", sans-serif;
     color: #c9cccf;
+    text-transform: uppercase;
 }
 
 .dates-range{
@@ -299,11 +339,18 @@ body{
 }
 
 .range{
+    font-size: 14px;
+    font-family: "SFUIDisplay", sans-serif;
     color: #c9cccf;
+    text-transform: uppercase;
 }
 
 .card-dates{
     padding-left: 25px;
+    font-size: 14px;
+    font-family: "SFUIDisplay", sans-serif;
+    color: rgb(43, 46, 51);
+    font-weight: bold;
 }
 
 .age-and-type{
@@ -312,16 +359,29 @@ body{
 }
 
 .age{
+    font-size: 14px;
+    font-family: "SFUIDisplay", sans-serif;
     color: #c9cccf;
+    text-transform: uppercase;
 }
 
 .type{
    padding-left: 90px;
     color: #c9cccf;
+    font-size: 14px;
+    font-family: "SFUIDisplay", sans-serif;
+    text-transform: uppercase;
 }
 
 .age-and-sports{
     display: flex;
+}
+
+.age-and-sports p{
+    font-size: 14px;
+    font-family: "SFUIDisplay", sans-serif;
+    color: rgb(43, 46, 51);
+    font-weight: bold;
 }
 
 .sports{
@@ -335,6 +395,10 @@ body{
 }
 
 .card-btn{
+    font-size: 16px;
+    font-family: "Geometria";
+    font-weight: 600;
+    color: rgb(24, 25, 26);
     width: 180px;
     height: 50px;
     background-color: #ffde00;
@@ -347,8 +411,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*padding-left: 185px;*/
-    padding-bottom: 90px;
+    margin-top: 310px;
+    margin-bottom: 230px;
 }
 
 .third-section h1{
@@ -381,8 +445,12 @@ body{
     margin-top: 68px;
 }
 
-.fourth-section h1{
-    color: white;
+#whats-new{
+    font-size: 30px;
+    font-family: "SFUIDisplay", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 
 .fourth-section hr{
@@ -422,13 +490,19 @@ body{
 }
 
 .read-more a {
-    color: #3e8df8;
+    font-size: 16px;
+    font-family: "Geometria";
+    color: rgb(62, 141, 248);
+    font-weight: bold;
     text-decoration: none;
 }
 
 .fourth-section-card-container h1 {
-    color: black;
+    font-size: 30px;
+    font-family: "Geometria";
+    color: rgb(24, 25, 26);
     height: 70px;
+    font-weight: 100;
 }
 
 .fourth-section-first-card-header-image{
@@ -438,15 +512,27 @@ body{
 }
 
 .fourth-section-card-btn{
+    font-size: 16px;
+    font-family: "Geometria";
+    color: rgb(255, 255, 255);
     width: 100px;
     height: 40px;
-    color: white;
     border-color: white;
     border-radius: 30px;
     background-color: Transparent;
     border-style: solid;
     margin: 30px;
 }
+
+.Blog {
+
+    line-height: 3.75;
+    position: absolute;
+    left: 149.609px;
+    top: 2249.603px;
+    z-index: 223;
+}
+
 
 #fourth-section-card-btn{
     width: 115px;
@@ -470,10 +556,19 @@ body{
     margin-top: 165px;
 }
 
+.text-and-follow-btn h1{
+    font-size: 30px;
+    font-family: "Geometria";
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+}
+
 .follow-btn{
-    width: 90px;
+    font-size: 14px;
+    font-family: "Geometria";
+    color: rgb(255, 255, 255);
+    width: 110px;
     height: 30px;
-    color: white;
     border-radius: 30px;
     background-color: #3e8df8;
     border: none;
@@ -482,22 +577,24 @@ body{
 /*fifth-section*/
 .fifth-section{
     width: 100%;
-    height: 1200px;
     display: flex;
     justify-content: center;
 }
 
 .fifth-section-container{
     width: 1195px;
-    height: 500px;
 }
 
 .fifth-section-first{
     margin-top: 90px;
 }
 
-.fifth-section-first h1{
-    color: rgb(255, 192, 0);
+#fifth-section-first-h1{
+    font-size: 30px;
+    font-family: "SFUIDisplay", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 191, 0);
+    text-transform: uppercase;
 }
 
 .fifth-section-first hr{
@@ -514,10 +611,14 @@ body{
 }
 
 .first-div h1{
-    color: black;
+    font-size: 30px;
+    color: rgb(24, 25, 26);
+    font-weight: bold;
 }
 
 .first-div p{
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
     color: #747576;
     text-align: end;
     padding-right: 30px;
@@ -541,14 +642,14 @@ body{
 
 .fifth-section-card-container h1{
     font-size: 60px;
-    font-family: "Geometria", serif;
+    font-family: "Geometria";
     line-height: 1;
     text-align: left;
 }
 
 .fifth-section-card-container p{
     font-size: 20px;
-    font-family: "Myriad Pro", serif;
+    font-family: "Geometria";
     color: rgb(24, 25, 26);
     line-height: 1.5;
     margin-bottom: 40px;
@@ -558,7 +659,7 @@ body{
     width: 168px;
     height: 46px;
     font-size: 20px;
-    font-family: "Geometria", serif;
+    font-family: "Geometria";
     background-color: rgb(255, 222, 0);
     border-radius: 30px;
     border: none;
@@ -566,7 +667,7 @@ body{
 
 .its-free{
     font-size: 20px;
-    font-family: "Geometria", serif;
+    font-family: "Geometria";
     color: rgb(126, 133, 142);
     line-height: 3;
     padding-left: 15px;
@@ -576,4 +677,146 @@ body{
     width: 600px;
     height: 580px;
     background-image: url("images/children-friends-fun-2.png");
+}
+
+.fifth-section-third{
+    margin-top: 125px;
+}
+
+.fifth-section-third h1 {
+    font-size: 30px;
+    font-family: "SFUIDisplay", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 197, 40);
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.fifth-section-third p {
+    font-size: 30px;
+    font-family: "Butler", sans-serif;
+    color: rgb(24, 25, 26);
+    font-weight: bold;
+    line-height: 2;
+    display: contents;
+}
+
+.fifth-section-third span {
+    font-size: 24px;
+    font-family: "SFUIDisplay", sans-serif;
+    color: rgb(126, 133, 142);
+    line-height: 2.5;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.fifth-section-fourth{
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+
+.fifth-section-fourth hr{
+    background-color: rgb(172, 180, 191);
+    height: 1px;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer{
+    width: 100%;
+    height: 440px;
+    background-color: rgb(24, 25, 26);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    margin-top: 70px;
+    display: flex;
+}
+
+.footer-logo-and-icon{
+    width: 300px;
+    height: 175px;
+}
+
+.footer-logo{
+
+}
+
+.footer-text-and-icon{
+    margin-top: 75px;
+}
+
+.footer-text-and-icon p{
+    height: 10px;
+    font-size: 16px;
+    font-family: "Geometria";
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+.icons{
+    display: flex;
+}
+
+.icon-ellipse{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/icon-ellipse.png);
+    margin-right: 6px;
+}
+
+.footer-text{
+    width: 300px;
+    height: 175px;
+}
+
+.footer-text p{
+    font-size: 15px;
+    font-family: "Geometria";
+    color: rgb(255, 255, 255);
+    line-height: 1.875;
+    margin-top: 0;
+    height: 16px;
+}
+
+.second-footer-text {
+    width: 220px;
+    height: 175px;
+}
+
+.second-footer-text p{
+    font-size: 15px;
+    font-family: "Geometria";
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.875;
+    margin-top: 0;
+    height: 16px;
+}
+
+
+.footer-btn{
+    width: 300px;
+    height: 175px;
+}
+
+.second-partner-with-us-btn {
+    font-size: 16px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: rgb(255, 222, 0);
+    padding: 6px 16px;
+    background-color: transparent;
+    display: flex;
+    font-family: "Geometria";
+    color: rgb(255, 222, 0);
 }
